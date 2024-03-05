@@ -22,10 +22,10 @@ const Navbar = () => {
           }>
           <ul>
             <li>
-            <NavLink to="/">Weather</NavLink>
+            <NavLink to="/" activeClassName="active">Weather</NavLink>
             </li>
             <li>
-            <NavLink to="/TodoWrapper">To-do</NavLink>
+            <NavLink to="/TodoWrapper" activeClassName="active">To-do</NavLink>
             </li>
           </ul>
         </div>

@@ -19,10 +19,19 @@ const Weather = () => {
 
   const getWeather = () => {
     fetch(`${api.base}weather?q=${search}&units=metric&APPID=${api.key}`)
-        .then(response => response.json())
-        .then(data => {
-            displayWeather(data);
-        }); 
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('City not found');
+        }
+        return response.json();
+      })
+      .then(data => {
+        displayWeather(data);
+      })
+      .catch(error => {
+        setError(error.message);
+        alert(error.message);
+      });
   };
 
   

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('../bg.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: #fdfcfc;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 5rem;
+}
+
+
+.TodoWrapper {
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(40, 127, 177, 0.1);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #4333da;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #a297f8;
+  margin-right: 5px;
+}
+
+
+.todo-input::placeholder {
+  color: #0d05ff4d;
+}
+
+.todo-btn {
+  background: #6c87f5;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4333da;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #6c77cf;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  height: 15px;
+}
+@media only screen and (max-width: 767px) {
+  h1 {
+    margin-bottom: 0.4rem;
+    font-size: 4.5rem;
+  }
+  .todo-input {
+    padding: 0.5rem 1rem;
+    width: 260px;
+    margin: 10px 5px;
+  }
+  .todo-btn {
+    padding: 4px 6px;
+    width: 10rem;
+  }
+  .Todo {
+    padding: 1px 6px;
+  }
+  .edit-icon,
+.delete-icon {
+  height: 14px;
+}
+}
+@media only screen and (max-width: 555px) {
+  h1 {
+    margin-bottom: 0.3rem;
+    font-size: 4.1rem;
+  }
+  .todo-input {
+    padding: 0.4rem 0.8rem;
+    width: 230px;
+    margin: 8px 4px;
+  }
+  .todo-btn {
+    padding: 3.5px 4.5px;
+    width: 10rem;
+  }
+  .Todo {
+    padding: 0.5px 7px;
+  }
+  .edit-icon,
+.delete-icon {
+  height: 13px;
+}
+}

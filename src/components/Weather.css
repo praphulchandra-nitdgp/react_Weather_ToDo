@@ -1,0 +1,274 @@
+
+
+body {
+              
+  background:url('../bg.png');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+ #weather-container {
+  background: rgba(84, 118, 162, 0.1);
+  width: 500px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(40, 127, 177, 0.1);
+  text-align: center;
+}
+
+h2, label, p {
+  color: #fff;
+  margin: 8px 0;
+}
+.hero-section p{
+  font-size: 25px;
+}
+.hero-section h2{
+  font-size: 30px;
+}
+
+input {
+  width: calc(100% - 16px);
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid white;
+  margin-top: 20px;
+}
+button {
+  background: #6c87f5;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100px;
+  font-size: 15px;
+}
+button:hover {
+  background: rgb(69, 79, 171);
+
+} 
+.detail{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+.col{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 15%;
+
+}
+.col i{
+  font-size: 25px;
+  color: black;
+}
+.hero-section .col p{
+  color: white;
+  font-size: 17px;  
+}
+
+#temp-div {
+  font-size: 60px;
+  margin-top: -30px;
+}
+
+#weather-info {
+  font-size: 20px;
+}
+
+.body img{
+  height: 200px;
+  width: 200px;
+}
+
+#hourly-forecast {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+.hourly-item {
+  flex: 0 0 auto;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  color: white;
+}
+
+.hourly-item img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+#hourly-heading {
+  color: #fff;
+  margin-top: 10px;
+}
+/* responsive */
+@media only screen and (max-width: 450px) {
+  #weather-container {
+      max-width: 320px;
+      padding: 13px;
+  }
+  input {
+      width: calc(100% - 50px);
+      padding: 7px;
+      margin-top: 15px;
+  }
+  .body img{
+    height: 120px;
+    width: 120px;
+    margin-bottom: -30px;
+    margin-top: -10px;
+  }
+  button {
+      padding: 8px;
+      margin-top: 17px;
+      width: 90px;
+      font-size: 13px;
+  }
+  .col i{
+      font-size: 21px;
+  }
+  .hero-section p{
+    font-size: 19px;
+  }
+  .hero-section h2{
+    font-size: 24px;
+  }
+  p{
+    margin: -0.5px 0;
+  }
+
+}
+
+@media only screen and (min-width: 451px) and (max-width: 530px) {
+  #weather-container {
+      max-width: 350px;
+      padding: 15px;
+  }
+  input {
+      width: calc(100% - 50px);
+      padding: 7px;
+      margin-top: 15px;
+  }
+  .body img{
+    height: 150px;
+    width: 150px;
+    margin-bottom: -35px;
+    margin-top: -25px;
+  }
+  .hourly-item img {
+      width: 25px;
+      height: 25px;
+      margin-bottom: 4px;
+  }
+  button {
+      padding: 7px;
+      margin-top: 19px;
+      width: 92px;
+      font-size: 14px;
+  }
+  .col i{
+      font-size: 22px;
+
+  }
+  #humidity{
+    font-size: 18px;
+  }
+  #wind{
+    font-size: 18px;
+
+  }
+  .hero-section p{
+    font-size: 21px;
+  }
+  .hero-section h2{
+    font-size: 24px;
+  }
+  p{
+    margin: -1px 0;
+  }
+
+}
+@media only screen and (min-width: 531px) and (max-width: 840px) {
+  #weather-container {
+      max-width: 450px;
+      padding: 20px;
+  }
+  input {
+      width: calc(100% - 50px);
+      padding: 7px;
+      margin-top: 15px;
+  }
+  .body img{
+    height: 165px;
+    width: 165px;
+    margin-bottom: -40px;
+    margin-top: -20px;
+  }
+  .col i{
+      font-size: 23px;
+
+  }
+  button {
+    padding: 7px 6.5px;
+    margin-top: 19px;
+    width: 92px;
+    font-size: 14px;
+  }
+  .hero-section p{
+    font-size: 24px;
+  }
+  .hero-section h2{
+    font-size: 26px;
+  }
+  p{
+    margin: -2px 0;
+  }
+
+}
+@media only screen and (min-width: 841px) and (max-width: 1500px) {
+  #weather-container {
+      max-width: 900px;
+      padding: 23px;
+  }
+  input {
+      width: calc(100% - 50px);
+      padding: 12px;
+      margin-top: 15px;
+  }
+  #weather-container {
+    width: 500px;
+    padding: 0 15px;
+    margin: 5rem 0;
+  }
+  .body img{
+    margin-bottom: -55px;
+    margin-top: -35px;
+  }
+  p{
+    margin: -3px 0;
+  }
+
+}
